@@ -27,7 +27,7 @@ footer {
   background-color: #bbb;
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 981px) {
   article {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -41,7 +41,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 980px) {
   body {
     background-color: lightblue;
     font-size: 20px;
