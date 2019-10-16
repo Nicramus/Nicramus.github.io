@@ -1,0 +1,59 @@
+$font-stack:    Courier;
+
+body {
+  font: 100% $font-stack;  
+}
+
+article {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+/*default*/
+
+/* match every element which is children of article */
+article > * {
+    padding: 20px;
+    background-color: #cccccc;
+}
+
+article > #visit_card {
+    background-color: #dedede;
+}
+
+footer {
+    background-color: #bbb
+}
+
+@media screen and(min-width: 600px) {
+    article {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+
+    article > * {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    article {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+#visit_card {
+
+}
+
+#gallery {
+    font-size: 2em;
+}

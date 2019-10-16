@@ -1,0 +1,59 @@
+body {
+  font: 100% Courier;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*default*/
+/* match every element which is children of article */
+article > * {
+  padding: 20px;
+  background-color: #cccccc;
+}
+
+article > #visit_card {
+  background-color: #dedede;
+}
+
+footer {
+  background-color: #bbb;
+}
+
+@media screen and (min-width: 600px) {
+  article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  article > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#gallery {
+  font-size: 2em;
+}
+/*# sourceMappingURL=main.css.map */
