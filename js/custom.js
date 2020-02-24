@@ -11,6 +11,8 @@
     var mapContainer = document.getElementById('map');
     var map = new google.maps.Map(mapContainer, {zoom:4, center:sianowskaLocation});
     var marker = new google.maps.Marker({position: sianowskaLocation, map: map});
+    
+    console.log("dupa");	
 }
 
 initMap();
