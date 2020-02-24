@@ -21,9 +21,10 @@
 	//Http.setRequestHeader('expires', '0');
 	//Http.setRequestHeader('expires', 'Tue, 01 Jan 1980 1:00:00 GMT');
 	//Http.setRequestHeader('pragma', 'no-cache');
-	Http.setRequestHeader('cache-control', 'max-age=604800');
+	
 	const url='https://jsonplaceholder.typicode.com/posts/1';
 	Http.open("GET", url);
+	Http.setRequestHeader('cache-control', 'max-age=604800');
 	Http.send();
 	
 	
